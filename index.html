@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Access Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen" class="screen active">
+        <h1>Check your knowledge about Open Access!</h1>
+        <button id="play-btn" class="btn">PLAY</button>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <h2 id="progress-indicator"></h2>
+
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="card-face card-front">
+                    <p id="question-text"></p>
+                </div>
+                <div class="card-face card-back">
+                    <p id="answer-text"></p>
+                </div>
+            </div>
+        </div>
+        <p class="instruction-text">Click the card to flip it. Click again for the next question.</p>
+    </div>
+
+    <div id="end-screen" class="screen">
+        <h1>You've completed the flashcards!</h1>
+        <div class="button-group">
+            <button id="replay-btn" class="btn">Replay</button>
+            <button id="return-btn" class="btn">Return to Start</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
